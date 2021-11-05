@@ -1,0 +1,119 @@
+/* variáveis */
+
+:root {
+    --vermelho: #e50914;
+    --preto: #000;
+    --branco: #fff;
+}
+
+/* reset todos elementos html */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* base */
+
+body {
+    background: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--branco);
+    font-size: 1rem;
+}
+
+.container {
+    padding: 1rem 2rem;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: var(--vermelho);
+    font-size: 2rem;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin-left: 1rem;
+    transition: .3s ease all;
+}
+
+nav a:hover {
+    color: #aaa;
+}
+
+/* filme principal */
+
+.filme-principal {
+    font-size: 1rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/o-jogo-da-imitacao-bg.jpg');
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container {
+    max-width: 60%;
+}
+
+.filme-principal .titulo {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.filme-principal .descricao {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem #000;
+}
+
+.filme-principal .botao {
+    font-size: 1.5rem;
+    border: none;
+    margin-right: 1rem;
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    transition: .3s ease all;
+    border-radius: 0.3rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.filme-principal .botao i {
+    margin-right: 1rem;
+}
+
+.botao-assistir {
+    background-color: #fff;
+    color: #000;
+}
+
+.botao-assistir:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #fff;
+}
+
+.botao-info {
+    background-color: rgba(127, 127, 127, 0.5);
+    color: #fff;
+}
+
+.botao-info:hover {
+    background-color: rgba(127, 127, 127, 0.3);
+}
+
+/* carousel */
+.box-filmes {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
