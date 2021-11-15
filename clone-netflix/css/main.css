@@ -1,225 +1,225 @@
 /* variáveis */
 
 :root {
-    --vermelho: #e50914;
+  --vermelho: #e50914;
 }
 
 /* reset todos elementos html */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* base */
 
 :target::before {
-    content: "";
-    display: block;
-    height: 70px;
-    margin: -70px 0 0;
+  content: "";
+  display: block;
+  height: 70px;
+  margin: -70px 0 0;
 }
 
 body {
-    background: #111;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    font-size: 1rem;
+  background: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 1rem;
 }
 
 .container {
-    padding: 1rem 2rem;
-    min-width: 480px;
+  padding: 1rem 2rem;
+  min-width: 480px;
 }
 
 header .container {
-    background: #111;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    min-height: 70px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 10;
+  background: #111;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
 }
 
 .logo {
-    color: var(--vermelho);
-    font-size: 2rem;
+  color: var(--vermelho);
+  font-size: 2rem;
 }
 
 nav a {
-    color: #ddd;
-    text-decoration: none;
-    margin-left: 1rem;
-    transition: .3s ease all;
+  color: #ddd;
+  text-decoration: none;
+  margin-left: 1rem;
+  transition: 0.3s ease all;
 }
 
 nav a:hover {
-    color: #aaa;
+  color: #aaa;
 }
 
 /* filme principal */
 
 .filme-principal {
-    font-size: 1rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/o-jogo-da-imitacao-bg.jpg');
-    background-size: cover;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  font-size: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/o-jogo-da-imitacao-bg.jpg");
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .filme-principal .container {
-    max-width: 65%;
-    z-index: 5;
+  max-width: 65%;
+  z-index: 5;
 }
 
 .filme-principal .titulo {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+  font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
 .filme-principal .descricao {
-    font-size: 1.3rem;
-    line-height: 1.3;
-    margin-bottom: 2rem;
-    text-shadow: 0.1rem 0.1rem 0.1rem #000;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem #000;
 }
 
 .filme-principal .botao {
-    font-size: 1.5rem;
-    border: none;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
-    padding: 0.8rem 2rem;
-    transition: .3s ease all;
-    border-radius: 0.3rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  border: none;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  transition: 0.3s ease all;
+  border-radius: 0.3rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .filme-principal .botao i {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .botao-assistir {
-    background-color: #fff;
-    color: #000;
+  background-color: #fff;
+  color: #000;
 }
 
 .botao-assistir:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #fff;
 }
 
 .botao-info {
-    background-color: rgba(127, 127, 127, 0.5);
-    color: #fff;
+  background-color: rgba(127, 127, 127, 0.5);
+  color: #fff;
 }
 
 .botao-info:hover {
-    background-color: rgba(127, 127, 127, 0.3);
+  background-color: rgba(127, 127, 127, 0.3);
 }
 
 /* carousel */
 .box-catalogo {
-    width: 100%;
-    height: 100%;
-    display: block;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .carousel-titulo {
-    font-size: 2rem;
-    margin: 1rem 0;
+  font-size: 2rem;
+  margin: 1rem 0;
 }
 
 /* rodape */
 .rodape .container {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
 .rodape .descricao {
-    color: #aaa;
-    font-size: 0.8rem;
-    text-align: center;
-    line-height: 1.5;
+  color: #aaa;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .redes a {
-    color: #aaa;
-    font-size: 2rem;
-    margin-right: 1rem;
+  color: #aaa;
+  font-size: 2rem;
+  margin-right: 1rem;
 }
-
 
 /* Trailer filme principal */
 .video-container {
-    position: absolute;
-    width: 100%;
-    height: 90vh;
-    overflow: hidden;
-    align-self: center;
-    opacity: 0;
-    animation: fadeTrailer 45s;
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  align-self: center;
+  opacity: 0;
+  animation: fadeTrailer 45s;
 }
 
 iframe {
-    width: 100%;
-    height: 100%;
-    margin-top: -11vh;
-    border: none;
-    transform: scale(1.2)
+  width: 100%;
+  height: 100%;
+  margin-top: -11vh;
+  border: none;
+  transform: scale(1.2);
 }
 
 @media (min-aspect-ratio: 16/9) {
-    .video-container iframe {
-        height: 56.25vw;
-    }
+  .video-container iframe {
+    height: 56.25vw;
+  }
 }
 
 @media (max-aspect-ratio: 16/9) {
-    .video-container iframe {
-        width: 177.78vh;
-    }
+  .video-container iframe {
+    width: 177.78vh;
+  }
 }
 
 @keyframes fadeTrailer {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    10% {
-        opacity: 1;
-    }
+  10% {
+    opacity: 1;
+  }
 
-    90% {
-        opacity: 1;
-    }
+  90% {
+    opacity: 1;
+  }
 
-    100% {
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* Responsive */
 @media screen and (max-width: 720px) {
-    header .container {
-        flex-direction: column;
-    }
+  header .container {
+    flex-direction: column;
+  }
 
-    .filme-principal .container {
-        max-width: 100%;
-    }
+  .filme-principal .container {
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .filme-principal .container {
-        max-width: 50%;
-    }
+  .filme-principal .container {
+    max-width: 50%;
+  }
 }
